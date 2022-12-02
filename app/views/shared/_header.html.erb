@@ -1,13 +1,37 @@
 <header>
-  <%= link_to image_tag("Logo.png", class:"HeaderLogo"), "/" %>
+  <%= link_to image_tag("Logo.png", class:"HeaderLogoImage"), "/", class:"HeaderLogo" %>
   <form class="HeaderSearch" action="#">
-    <div class="HeaderSearchInputWrapper">
-      <input class="HeaderSearchInputform" placeholder="">
-      <img class="HeaderSeearchIcon" src="assets/images/SearchIcon.png">
-      <input class="HeaderSearchCategory">
-    </div>
-    <input class="HeaderSearchSubmit" type="submit">
+    <input class="HeaderSearchInputForm" placeholder="アイディア、作品を検索">
+    <%= image_tag "SearchIcon.png", class: "HeaderSearchIcon" %>
+    <input class="HeaderSearchCategory" placeholder="アイディア ▼">
+    <input class="HeaderSearchSubmit" type="submit" value="検索する">
   </form>
-  <a class="HeaderSignup" href="">新規登録</a>
-  <a class="HeaderSingnin" href="">ログイン</a>
+  <div class="HeaderMenu">
+    <% if user_signed_in? %>
+      <div class="HeaderPostContainer">
+        <button class="HeaderPostButton">
+          投稿する
+          <%= image_tag "TriangleWhite.png", class:"HeaderPostTriangle" %>
+        </button>
+        <ul class="HeaderPostMenu">
+          <li><%= link_to "アイディア", "/", class:"HeaderPostIdea" %></li>
+          <li><%= link_to "作品", "/", class:"HeaderPostWork" %></li>
+        </ul>
+      </div>
+      <%= link_to image_tag("Message.png", class:"HeaderMessageImage"), "/", class:"HeaderMessage" %>
+      <div class="HeaderUserContainer">
+        <div class="HeaderUserButton">
+          <%= image_tag "FavoriteStarOff.png", class:"HeaderUserIcon" %>
+          <%= image_tag "TriangleWhite.png", class:"HeaderUserTriangle" %>
+        </div>
+        <ul class="HeaderUserMenu">
+          <li><%= link_to "マイページ", "/", class:"HeaderUserMypage" %></li>
+          <li><%= link_to "ログアウト", "/", class:"HeaderUserLogout" %></li>
+        </ul>
+      </div>
+    <% else %>
+      <%= link_to "新規登録", new_user_registration_path, class: "HeaderLinkSignUp"%>
+      <%= link_to "ログイン", new_user_session_path, class: "HeaderLinkSignIn" %>
+    <% end %>
+  </div>
 </header>

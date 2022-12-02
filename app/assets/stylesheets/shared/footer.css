@@ -1,9 +1,10 @@
 footer {
+  align-items: flex-end;
+  display: flex;
   height: 128px;
-  text-align: center;
+  justify-content: center;
 }
 
 .FooterCopyright {
   color: #d5d5d5;
-  line-height: 100%;
 }

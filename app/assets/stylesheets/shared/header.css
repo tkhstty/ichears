@@ -1,22 +1,202 @@
+/* Header全般 */
+
 header {
-  height: 64px;
-  line-height: 64px;
+  align-items: center;
   display: flex;
+  height: 64px;
+  justify-content: space-between;
+  padding: 0 20px;
 }
 
+
+/* HeaderLogo */
+
 .HeaderLogo {
+  align-items: center;
+  display: flex;
+  line-height: 64px;
+  text-align: center;
+}
+
+.HeaderLogoImage {
+  height: 48px;
+}
+
+
+/* HeaderSearch */
+
+.HeaderSearch {
+  background-color: #000d13;
+  color: #d5d5d5;
+  display: flex;
+  font-size: 14px;
+  height: 40px;
+  justify-content: space-between;
+  line-height: 64px;
+  width: 45%;
+  position: relative;
+}
+
+.HeaderSearchInputForm {
+  background-color: #343a3d;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  padding-left: 40px;
+  width: calc(100% - 110px);
+}
+
+.HeaderSearchIcon {
+  position: absolute;
+  height: 20px;
+  left: 10px;
+  top: 10px;
+  width: 20px;
+}
+
+.HeaderSearchCategory {
+  background-color: #343a3d;
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+  border-radius: 0 5px 5px 0;
+  text-align: center;
+  padding: 5px;
+  width: 110px;
+}
+
+.HeaderSearchSubmit {
+  background-color: #343a3d;
+  border: none;
+  border-radius: 10px;
+  color: #757575;
+  height: 30px;
+  margin: auto 0 auto 10px;
+  width: 100px;
+}
+
+
+/* HeaderMenu */
+
+.HeaderMenu {
+  color: #d5d5d5;
+  display: flex;
+  font-size: 16px;
+  justify-content: right;
+}
+
+a:link, a:visited, a:hover, a:active {
+  color: #d5d5d5;
+}
+
+
+/** HeaderMenu ログアウト時 **/
+
+.HeaderLinkSignIn {
+  font-weight: bold;
+  margin-right: 40px;
+}
+
+.HeaderLinkSignUp {
+  font-weight: bold;
+  margin-right: 40px;
+}
+
+
+/** HeaderMenu ログイン時 **/
+
+.HeaderPostContainer {
+  height: 40px;
+  margin-right: 30px;
+}
+
+.HeaderPostButton {
+  align-items: center;
+  background-color: #343a3d;
+  border: none;
+  border-radius: 20px;
+  color: #d5d5d5;
+  display: flex;
+  font-size: 16px;
+  height: 100%;
+  justify-content: center;
+  text-align: center;
+  width: 120px;
+}
+
+.HeaderPostTriangle {
+  height: 8px;
+  padding-left: 5px;
+}
+
+.HeaderMessage {
+  height: 24px;
+  margin: auto;
+}
+
+.HeaderMessageImage {
   height: 100%;
 }
 
-.HeaderSearch {
-  display: flex;
-  width: 600px;
+.HeaderUserContainer {
+  height: 40px;
+  margin-right: 30px;
 }
 
-.HeaderSearchInputWrapper {
+.HeaderUserButton {
+  align-items: center;
   display: flex;
+  justify-content: right;
+  text-align: center;
 }
 
-.HeaderSignUp .HeaderLogin {
-  color: #d5d5d5;
+.HeaderUserIcon {
+  border-radius: 24px;
+  height: 36px;
+  padding-right: 5px;
+}
+
+.HeaderUserTriangle {
+  height: 8px;
+}
+
+
+/*** HeaderMenu ログイン時 Menu開閉 ***/
+
+.HeaderPostButton.is-active {
+  border: solid 1px;
+  border-color: #feda7e;
+}
+
+.HeaderPostMenu {
+  text-align: center;
+  line-height: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition-duration: 0.4s;
+}
+ 
+.HeaderPostMenu.is-open {
+  border: 1px solid #343a3d;
+  padding: 10px;
+  line-height: normal;
+  height: auto;
+  opacity: 1;
+}
+
+.HeaderUserMenu {
+  text-align: center;
+  line-height: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition-duration: 0.4s;
+}
+ 
+.HeaderUserMenu.is-open {
+  border: 1px solid #343a3d;
+  padding: 10px;
+  line-height: normal;
+  height: auto;
+  opacity: 1;
 }
