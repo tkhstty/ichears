@@ -6,6 +6,8 @@ header {
   height: 64px;
   justify-content: space-between;
   padding: 0 20px 10px 20px;
+  position: relative;
+  z-index: 1;
 }
 
 
@@ -80,7 +82,6 @@ header {
 .HeaderMenu {
   color: #d5d5d5;
   display: flex;
-  font-size: 16px;
   justify-content: right;
 }
 
@@ -168,35 +169,37 @@ a:link, a:visited, a:hover, a:active {
 }
 
 .HeaderPostMenu {
-  text-align: center;
-  line-height: 0;
   height: 0;
-  overflow: hidden;
+  line-height: 0;
   opacity: 0;
+  text-align: center;
   transition-duration: 0.4s;
 }
  
 .HeaderPostMenu.is-open {
+  background-color: #000d13;
   border: 1px solid #343a3d;
-  padding: 10px;
-  line-height: normal;
-  height: auto;
+  border-radius: 5px;
+  height: 60px;
+  line-height: 30px;
   opacity: 1;
+  padding: 10px;
 }
 
 .HeaderUserMenu {
-  text-align: center;
-  line-height: 0;
   height: 0;
-  overflow: hidden;
+  line-height: 0;
   opacity: 0;
+  text-align: center;
   transition-duration: 0.4s;
 }
  
 .HeaderUserMenu.is-open {
+  background-color: #000d13;
   border: 1px solid #343a3d;
-  padding: 10px;
-  line-height: normal;
-  height: auto;
+  border-radius: 5px;
+  height: 60px;
+  line-height: 30px;
   opacity: 1;
+  padding: 10px;
 }
