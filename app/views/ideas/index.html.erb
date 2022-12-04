@@ -1,0 +1,31 @@
+<%= render 'shared/header' %>
+
+<main>
+  <div class='TopHero'>
+    <%= image_tag 'HeroImage.png', class:'TopHeroImage' %>
+  </div>
+  <div class='TopIdeasIndex'>
+    <h2 class='TopIdeasIndexTitle'>
+      アイディア
+    </h2>
+    <div class='TopIdeasIndexBoxContainer'>
+      <%= render'shared/ideabox'%>
+      <%= render'shared/ideabox'%>
+      <%= render'shared/ideabox'%>
+      <%= render'shared/ideabox'%>
+    </div>
+  </div>
+  <div class='TopWorksIndex'>
+    <h2 class='TopWorksIndexTitle'>
+      作品
+    </h2>
+    <div class='TopWorksIndexBoxContainer'>
+      <%= render'shared/workbox'%>
+      <%= render'shared/workbox'%>
+      <%= render'shared/workbox'%>
+      <%= render'shared/workbox'%>
+    </div>
+  </div>
+</main>
+
+<%= render 'shared/footer' %>

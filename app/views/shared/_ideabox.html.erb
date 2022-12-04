@@ -1,0 +1,25 @@
+<div class='IdeaBox'>
+  <%= link_to '後にIdeasテーブルから呼び出し。ダミータイトルダミータイトル', '/', class:'IdeaBoxTitle' %>
+  <div class='IdeaBoxDescription'>
+    後にIdeasテーブルから呼び出し。ダミーテキストダミーテキスト
+    ダミーテキストダミーテキストダミーテキストダミーテキストダミ
+    ーテキストダミーテキストダミーテキストダミーテキスト
+  </div>
+  <ul class='IdeaBoxImagesContainer'>
+    <li><%= image_tag 'SampleImage1.png', class:'IdeaBoxImage' %></li>
+    <li><%= image_tag 'SampleImage2.png', class:'IdeaBoxImage' %></li>
+    <li><%= image_tag 'SampleImage3.png', class:'IdeaBoxImage' %></li>
+    <li><%= image_tag 'SampleImage4.png', class:'IdeaBoxImage' %></li>
+  </ul>
+  <div class='IdeaBoxBottomContents'>
+    <div class='IdeaBoxUsersContainer'>
+      <div class='IdeaBoxToUser'>
+        To <%= link_to 'User', '/' %>
+      </div>
+      <div class='IdeaBoxFromUser'>
+        From <%= link_to 'User', '/' %>
+      </div>
+    </div>
+    <%= image_tag 'FavoriteStarOff', class:'IdeaBoxFavoriteStar' %>
+  </div>
+</div>

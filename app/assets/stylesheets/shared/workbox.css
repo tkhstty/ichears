@@ -1,0 +1,28 @@
+.WorkBoxesContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.WorkBox {
+  margin: 10px;
+  position: relative;
+  width: 320px;
+}
+
+.WorkBoxImage {
+  width: 100%;
+}
+
+.WorkBoxFavoriteStar {
+  height: 40px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 40px;
+}
+
+.WorkBoxTitle {
+  margin-top: 5px;
+}

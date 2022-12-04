@@ -2,7 +2,7 @@ body {
   background-color: #000d13;
   color: #a2a2a2;
   font-family: 'Yu Gothic'; 
-  font-size: 24px;
+  font-size: 16px;
 }
 
 main {
@@ -13,4 +13,8 @@ main {
 h1 {
   font-size: 36px;
   font-weight: bold;
+}
+
+h2 {
+  font-size: 18px;
 }

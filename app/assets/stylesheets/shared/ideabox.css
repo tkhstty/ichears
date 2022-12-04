@@ -1,0 +1,38 @@
+.IdeaBox {
+  background-color: #343a3d;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 20px;
+  width: 280px;
+}
+
+.IdeaBoxDescription {
+  font-size: 14px;
+  margin-top: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.IdeaBoxImagesContainer {
+  display: flex;
+  height: 70px;
+  justify-content: space-between;
+  margin-top: 5px;
+  width: 100%;
+}
+
+.IdeaBoxImage {
+  width: 70px;
+}
+
+.IdeaBoxBottomContents {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+
+.IdeaBoxFavoriteStar {
+  height: 40px;
+  margin-top: 5px;
+  width: 40px;
+}
