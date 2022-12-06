@@ -1,0 +1,25 @@
+.TotalTipsContainer {
+  border: 3px solid #feda7e;
+  border-radius: 10px;
+  display: flex;
+  height: 100px;
+  justify-content: space-between;
+  line-height: 100px;
+  margin: 40px auto;
+  width: 700px;
+}
+
+.TotalTipsText {
+  color: #feda7e;
+  font-size: 18px;
+  margin-left: 100px;
+}
+
+.TotalTipsAmount {
+  color: #000d13;
+  font-weight: bold;
+  font-size: 28px;
+  margin-right: 100px;
+  -webkit-text-stroke: 1px #feda7e;
+  text-stroke: 1px #feda7e;
+}
