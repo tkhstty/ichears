@@ -1,3 +1,5 @@
+/* 全体共通部分 */
+
 body {
   background-color: #000d13;
   color: #a2a2a2;
@@ -17,4 +19,35 @@ h1 {
 
 h2 {
   font-size: 18px;
+}
+
+
+/* 複数ページ共通部分 */
+
+.FormInput {
+  background-color: #fff;
+  border-radius: 5px;
+  height: 15px;
+  padding: 10px;
+}
+
+.SubmitButton {
+  background-color: #feda7e;
+  border-radius: 20px;
+  color: #fff;
+  font-weight: bold;
+  height: 60px;
+  width: 240px;
+}
+
+.Tag {
+  background-color: #a2a2a2;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: bold;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  width: 180px;
+  /* 色はJSが必要そうなので別途実装 */
 }

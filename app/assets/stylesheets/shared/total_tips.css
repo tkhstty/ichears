@@ -17,8 +17,8 @@
 
 .TotalTipsAmount {
   color: #000d13;
-  font-weight: bold;
   font-size: 28px;
+  font-weight: bold;
   margin-right: 100px;
   -webkit-text-stroke: 1px #feda7e;
   text-stroke: 1px #feda7e;
