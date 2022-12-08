@@ -25,6 +25,9 @@ h2 {
   font-size: 18px;
 }
 
+.hidden {
+  display: none;
+}
 
 /* 複数ページ共通部分 */
 
