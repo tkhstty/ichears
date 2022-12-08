@@ -25,8 +25,8 @@
           <%= image_tag "TriangleWhite.png", class:"HeaderUserTriangle" %>
         </div>
         <ul class="HeaderUserMenu">
-          <li><%= link_to "マイページ", "/", class:"HeaderUserMypage" %></li>
-          <li><%= link_to "ログアウト", "/", class:"HeaderUserLogout" %></li>
+          <li><%= link_to "マイページ", '/', class:"HeaderUserMypage" %></li>
+          <li><%= link_to "ログアウト", destroy_user_session_path, method: :delete, class:"HeaderUserLogout" %></li>
         </ul>
       </div>
     <% else %>
