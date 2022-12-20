@@ -1,14 +1,7 @@
-.WorkBoxesContainer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  width: 100%;
-}
-
 .WorkBox {
-  margin: 10px;
+  margin: 0 20px 20px 0;
   position: relative;
-  width: 320px;
+  width: 220px;
 }
 
 .WorkBoxImage {
@@ -16,11 +9,9 @@
 }
 
 .WorkBoxFavoriteStar {
-  height: 40px;
   position: absolute;
   right: 10px;
   top: 10px;
-  width: 40px;
 }
 
 .WorkBoxTitle {

@@ -1,9 +1,9 @@
 .IdeaBox {
   background-color: #343a3d;
   border-radius: 5px;
-  margin: 10px;
+  margin: 0 20px 20px 0;
   padding: 20px;
-  width: 280px;
+  width: 340px;
 }
 
 .IdeaBoxDescription {
@@ -32,7 +32,5 @@
 }
 
 .IdeaBoxFavoriteStar {
-  height: 40px;
   margin-top: 5px;
-  width: 40px;
 }

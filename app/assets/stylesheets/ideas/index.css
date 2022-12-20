@@ -1,33 +1,3 @@
 .TopHeroImage {
   width: 100%;
 }
-
-.TopIdeasIndex {
-  margin: 20px;
-}
-
-.TopIdeasIndexTitle {
-  margin-left: 10px;
-}
-
-.TopIdeasIndexBoxContainer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  width: 100%;
-}
-
-.TopWorksIndex {
-  margin: 20px;
-}
-
-.TopWorksIndexTitle {
-  margin-left: 10px;
-}
-
-.TopWorksIndexBoxContainer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  width: 100%;
-}
