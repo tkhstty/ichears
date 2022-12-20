@@ -1,0 +1,50 @@
+.UserMyPageUserContainer {
+  display: block;
+  margin-top: 100px;
+}
+
+.UserMyPageUserUpperContainer {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.UserMyPageUserIconAndName {
+  align-items: center;
+  display: flex;
+}
+
+.UserMyPageUserIcon {
+  border-radius: 100vw;
+  height: 100px;
+  width: 100px;
+}
+
+.UserMyPageUserName {
+  font-size: 20px;
+  margin-left: 40px;
+}
+
+.UserMyPageUserFavoriteStar {
+  margin-right: 40px;
+}
+
+.UserMyPageUserSelfIntroduction {
+  margin-top: 20px;
+}
+
+.UserMyPageUserTips {
+  margin-top: 20px;
+}
+
+.UserMyPageBoxesContainer {
+  border-top: 1px solid #343a3d;
+  padding-top: 20px;
+  margin-top: 80px;
+}
+
+.UserMyPageBoxesTitle {
+  border-bottom: 1px solid #343a3d;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}

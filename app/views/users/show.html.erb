@@ -1,0 +1,82 @@
+<%= render "shared/header" %>
+<main>
+  <div class="UserMyPageUserContainer">
+    <div class="UserMyPageUserUpperContainer">
+      <div class="UserMyPageUserIconAndName">
+        <%= image_tag 'SampleImage2', class:'UserMyPageUserIcon' %>
+        <h1 class="UserMyPageUserName">
+          UserName
+        </h1>
+      </div>
+      <%= image_tag 'FavoriteStarOff', class:'FavoriteStar UserMyPageUserFavoriteStar' %>
+    </div>
+    <div class="UserMyPageUserSelfIntroduction">
+      自己紹介文自己紹介文自己紹介文自己紹介文自己紹介文自己紹介文。</br>
+      自己紹介文自己紹介文自己紹介文自己紹介文自己紹介文自己紹介文自己紹介文自己紹介文自己紹介文自己紹介文。</br>
+      自己紹介文自己紹介文自己紹介文自己紹介文。
+    </div>
+    <div class="UserMyPageUserTips">
+      <%= render 'shared/total_tips' %>
+    </div>
+  </div>
+  <div class="UserMyPageBoxesContainer">
+    <h2 class="UserMyPageBoxesTitle">UserNameの投稿物</h2>
+    <div class="BoxesContainer">
+      <div class="BoxesTitle">
+        アイディア一覧
+      </div>
+      <div class="BoxesWrapper">
+        <%= render 'shared/ideabox' %>
+        <%= render 'shared/ideabox' %>
+        <%= render 'shared/ideabox' %>
+      </div>
+    </div>
+    <div class="BoxesContainer">
+      <div class="BoxesTitle">
+        作品一覧
+      </div>
+      <div class="BoxesWrapper">
+        <%= render 'shared/workbox' %>
+        <%= render 'shared/workbox' %>
+        <%= render 'shared/workbox' %>
+      </div>
+    </div>
+  </div>
+  <div class="UserMyPageBoxesContainer">
+    <h2 class="UserMyPageBoxesTitle">ブックマーク</h2>
+    <div class="BoxesContainer">
+      <div class="BoxesTitle">
+        アイディア
+      </div>
+      <div class="BoxesWrapper">
+        <%= render 'shared/ideabox' %>
+        <%= render 'shared/ideabox' %>
+        <%= render 'shared/ideabox' %>
+      </div>
+    </div>
+    <div class="BoxesContainer">
+      <div class="BoxesTitle">
+        作品
+      </div>
+      <div class="BoxesWrapper">
+        <%= render 'shared/workbox' %>
+        <%= render 'shared/workbox' %>
+        <%= render 'shared/workbox' %>
+        <%= render 'shared/workbox' %>
+        <%= render 'shared/workbox' %>
+        <%= render 'shared/workbox' %>
+      </div>
+    </div>
+  </div>
+  <div class="UserMyPageBoxesContainer">
+    <h2 class="UserMyPageBoxesTitle">UserNameがフォローしているユーザー</h2>
+    <div class="BoxesContainer">
+      <div class="BoxesWrapper">
+        <%= render 'shared/userbox' %>
+        <%= render 'shared/userbox' %>
+        <%= render 'shared/userbox' %>
+      </div>
+    </div>
+  </div>
+</main>
+<%= render "shared/footer" %>
