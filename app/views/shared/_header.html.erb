@@ -21,7 +21,11 @@
       <%= link_to image_tag("Message.png", class:"HeaderMessageImage"), "/", class:"HeaderMessage" %>
       <div class="HeaderUserContainer">
         <div class="HeaderUserButton">
-          <%= image_tag "FavoriteStarOff.png", class:"HeaderUserIcon" %>
+          <% if current_user.image.attached? %>
+            <%= image_tag current_user.image, class:"HeaderUserIcon" %>
+          <% else %>
+            <%= image_tag 'DefaultIcon', class:"HeaderUserIcon" %>
+          <% end %>
           <%= image_tag "TriangleWhite.png", class:"HeaderUserTriangle" %>
         </div>
         <ul class="HeaderUserMenu">

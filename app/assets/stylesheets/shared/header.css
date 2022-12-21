@@ -151,9 +151,10 @@ a:link, a:visited, a:hover, a:active {
 }
 
 .HeaderUserIcon {
-  border-radius: 24px;
+  border-radius: 100vw;
   height: 36px;
   padding-right: 5px;
+  width: 36px;
 }
 
 .HeaderUserTriangle {
