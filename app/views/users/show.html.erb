@@ -3,24 +3,26 @@
   <div class="UserMyPageUserContainer">
     <div class="UserMyPageUserUpperContainer">
       <div class="UserMyPageUserIconAndName">
-        <%= image_tag 'SampleImage2', class:'UserMyPageUserIcon' %>
+        <% if @user.image.attached? %>
+          <%= image_tag @user.image, class:'UserMyPageUserIcon' %>
+        <% else %>
+          <%= image_tag 'DefaultIcon', class:'UserMyPageUserIcon' %>
+        <% end %>
         <h1 class="UserMyPageUserName">
-          UserName
+          <%= @user.name %>
         </h1>
       </div>
       <%= image_tag 'FavoriteStarOff', class:'FavoriteStar UserMyPageUserFavoriteStar' %>
     </div>
     <div class="UserMyPageUserSelfIntroduction">
-      自己紹介文自己紹介文自己紹介文自己紹介文自己紹介文自己紹介文。</br>
-      自己紹介文自己紹介文自己紹介文自己紹介文自己紹介文自己紹介文自己紹介文自己紹介文自己紹介文自己紹介文。</br>
-      自己紹介文自己紹介文自己紹介文自己紹介文。
+      <%= @user.self_introduction %>
     </div>
     <div class="UserMyPageUserTips">
       <%= render 'shared/total_tips' %>
     </div>
   </div>
   <div class="UserMyPageBoxesContainer">
-    <h2 class="UserMyPageBoxesTitle">UserNameの投稿物</h2>
+    <h2 class="UserMyPageBoxesTitle"><%= @user.name %>の投稿物</h2>
     <div class="BoxesContainer">
       <div class="BoxesTitle">
         アイディア一覧
@@ -69,7 +71,7 @@
     </div>
   </div>
   <div class="UserMyPageBoxesContainer">
-    <h2 class="UserMyPageBoxesTitle">UserNameがフォローしているユーザー</h2>
+    <h2 class="UserMyPageBoxesTitle"><%= @user.name %>がフォローしているユーザー</h2>
     <div class="BoxesContainer">
       <div class="BoxesWrapper">
         <%= render 'shared/userbox' %>
