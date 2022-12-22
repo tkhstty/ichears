@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+function imagePreview() {
   const formJudge = document.querySelector('form')
   if (!formJudge) return null
 
@@ -20,4 +20,6 @@ document.addEventListener('DOMContentLoaded', () => {
     preview.appendChild(previewIcon)
     preview.removeAttribute('class', 'hidden')
   })
-})
+}
+
+window.addEventListener('load', imagePreview)
