@@ -1,0 +1,49 @@
+<%= render "shared/header" %>
+<main>
+  <h1>アイディア新規投稿</h1>
+
+  <%= form_with model: @idea, class: 'IdeaForm', local: true do |f| %>
+
+    <div class='FormInputsWrapper'>
+
+      <div class="FormContainer">
+        <div class="FormText">
+          <%= f.label :title, 'タイトル' %>
+          <span class="FormRequired">必須</span>
+        </div>
+        <%= f.text_field :title, class: 'FormInput IdeaFormTitle', placeholder: 'アイディアの概要', maxlength: '40' %>
+      </div>
+
+      <div class="FormContainer">
+        <div class="FormText">
+          <%= f.label :description, '詳細' %>
+          <span class="FormRequired">必須</span>
+        </div>
+        <%= f.text_area :description, class: 'FormInput IdeaFormDescription', placeholder: '詳細を記載してください', maxlength: '1000' %>
+      </div>
+
+      <div class="FormContainer">
+        <div class="FormText">
+          <%= f.label :requested_user_id, '依頼するユーザー' %>
+          <span class="FormRequired">任意</span>
+        </div>
+        <%= f.collection_select(:requested_user_id, @users, :id, :name, { include_blank: true, prompt: false }, class: 'FormInput IdeaFormRequestedUser') %>
+        <input name="idea[user_id]" type="hidden" value=<%= current_user.id %>>
+      </div>
+
+      <div class="FormContainer">
+        <div class="FormText">
+          参考画像
+        </div>
+        <div class='IdeaFormImagesWrap hidden'></div>
+        <%= f.label :images, '画像を選択する', class: 'IdeaFormImagesLabel' %>
+        <%= f.file_field :images, name: 'idea[images][]', data: {index: 0}, class: 'IdeaFormImagesForm' %>
+      </div>
+
+    </div>
+
+    <%= f.submit "新規投稿する", class:'SubmitButton' %>
+  <% end %>
+
+</main>
+<%= render "shared/footer" %>
