@@ -1,5 +1,5 @@
-function imagePreview() {
-  const formJudge = document.querySelector('form')
+function userIconPreview() {
+  const formJudge = document.querySelector('.UserSignUpForm')
   if (!formJudge) return null
 
   const preview = document.querySelector('.UserSignUpIconWrap')
@@ -22,4 +22,4 @@ function imagePreview() {
   })
 }
 
-window.addEventListener('load', imagePreview)
+window.addEventListener('load', userIconPreview)
