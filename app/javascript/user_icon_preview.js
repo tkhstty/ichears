@@ -18,7 +18,7 @@ function userIconPreview() {
     previewIcon.setAttribute('src', blob)
     previewIcon.setAttribute('class', 'UserSignUpIconPreview')
     preview.appendChild(previewIcon)
-    preview.removeAttribute('class', 'hidden')
+    preview.removeAttribute('type', 'hidden')
   })
 }
 

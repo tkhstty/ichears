@@ -19,7 +19,7 @@
   width: 50%;
 }
 
-.IdeaFormImagesLabel {
+.IdeaFormImageLabel {
   background-color: #343a3d;
   border: none;
   border-radius: 20px;
@@ -29,10 +29,21 @@
   text-align: center;
 }
 
-.IdeaFormImagesForm {
+.IdeaFormImagesWrap, .IdeaFromImageInputsWrap {
+  display: flex;
+  flex-direction: row;
+}
+
+.IdeaFormImageInputWrap {
+  margin-top: 4px;
+}
+
+.IdeaFormImage, .IdeaFormImageInputWrap {
+  margin-right: 3%;
+  width: 20%;
+}
+
+.IdeaFormImageInput {
   display: none;
 }
 
-.IdeaFormImage {
-  height: 150px;
-}

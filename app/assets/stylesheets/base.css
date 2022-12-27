@@ -25,9 +25,6 @@ h2 {
   font-size: 20px;
 }
 
-.hidden {
-  display: none;
-}
 
 /* Box関連 */
 
@@ -49,11 +46,11 @@ h2 {
 
 /* Form関連 */
 
-.FormInputsWrapper {
+.FormInputsContainer {
   text-align: left;
 }
 
-.FormContainer {
+.FormWrap {
   margin: 8px 0;
 }
 

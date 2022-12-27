@@ -4,9 +4,9 @@
 
   <%= form_with model: @idea, class: 'IdeaForm', local: true do |f| %>
 
-    <div class='FormInputsWrapper'>
+    <div class='FormInputsContainer'>
 
-      <div class="FormContainer">
+      <div class="FormWrap">
         <div class="FormText">
           <%= f.label :title, 'タイトル' %>
           <span class="FormRequired">必須</span>
@@ -14,7 +14,7 @@
         <%= f.text_field :title, class: 'FormInput IdeaFormTitle', placeholder: 'アイディアの概要', maxlength: '40' %>
       </div>
 
-      <div class="FormContainer">
+      <div class="FormWrap">
         <div class="FormText">
           <%= f.label :description, '詳細' %>
           <span class="FormRequired">必須</span>
@@ -22,7 +22,7 @@
         <%= f.text_area :description, class: 'FormInput IdeaFormDescription', placeholder: '詳細を記載してください', maxlength: '1000' %>
       </div>
 
-      <div class="FormContainer">
+      <div class="FormWrap">
         <div class="FormText">
           <%= f.label :requested_user_id, '依頼するユーザー' %>
           <span class="FormRequired">任意</span>
@@ -31,13 +31,17 @@
         <input name="idea[user_id]" type="hidden" value=<%= current_user.id %>>
       </div>
 
-      <div class="FormContainer">
+      <div class="FormWrap IdeaFormImageForm">
         <div class="FormText">
           参考画像
         </div>
-        <div class='IdeaFormImagesWrap hidden'></div>
-        <%= f.label :images, '画像を選択する', class: 'IdeaFormImagesLabel' %>
-        <%= f.file_field :images, name: 'idea[images][]', data: {index: 0}, class: 'IdeaFormImagesForm' %>
+        <div class='IdeaFormImagesWrap' type='hidden'></div>
+        <div class='IdeaFromImageInputsWrap'>
+          <div class='IdeaFormImageInputWrap' data-index="0">
+            <%= f.label :images, '画像を選択する', class: 'IdeaFormImageLabel', data: {index: 0} %>
+            <%= f.file_field :images, name: 'idea[images][]', data: {index: 0}, class: 'IdeaFormImageInput' %>
+          </div>
+        </div>
       </div>
 
     </div>
